@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services | Happy Paws Veterinary Clinic</title>
+  <meta name="description" content="Wellness exams, vaccinations, dental care, surgery, emergency care, and grooming at Happy Paws Veterinary Clinic." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Icon set (reused with <use href="#i-name">) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.110 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.370z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.780l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></symbol>
+      <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+      <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ========== Thin top strip ========== -->
+  <div class="strip-top">Established in 2010</div>
+
+  <!-- ========== Brand header ========== -->
+  <div class="brandbar">
+    <div class="container brandbar-inner">
+      <a href="tel:5551234567" class="brand-phone"><svg class="i"><use href="#i-phone"/></svg> (555) 123-4567</a>
+      <a href="index.html" class="logo logo-light">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">Happy Paws<small>Veterinary Clinic</small></span>
+      </a>
+      <div class="social">
+        <a href="#" aria-label="Facebook"><svg class="i"><use href="#i-facebook"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg class="i"><use href="#i-instagram"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Sticky Navigation ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">🐾 Happy Paws</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li class="has-dropdown">
+            <a href="services.html" class="current" aria-current="page">Services</a>
+            <button class="dd-toggle" aria-expanded="false" aria-label="Show service list"><svg class="i"><use href="#i-down"/></svg></button>
+            <ul class="dropdown">
+              <li><a href="services.html#wellness">Wellness Exams</a></li>
+              <li><a href="services.html#vaccinations">Vaccinations</a></li>
+              <li><a href="services.html#dental">Dental Care</a></li>
+              <li><a href="services.html#surgery">Surgery</a></li>
+              <li><a href="services.html#emergency">Emergency Care</a></li>
+              <li><a href="services.html#grooming">Grooming</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html#team">Our Team</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+          <li><a href="index.html#contact">New Client Form</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== Page banner ========== -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Services</p>
+        <h1>Our Services</h1>
+        <p>From first puppy and kitten visits to senior care, surgery, and a fresh new haircut — everything your pet needs, under one roof.</p>
+      </div>
+    </section>
+
+    <!-- ========== Quick links ========== -->
+    <nav class="service-jump" aria-label="Jump to a service">
+      <div class="container service-jump-inner">
+        <a href="#wellness"><svg class="i"><use href="#i-heart"/></svg>Wellness</a>
+        <a href="#vaccinations"><svg class="i"><use href="#i-shield"/></svg>Vaccinations</a>
+        <a href="#dental"><svg class="i"><use href="#i-smile"/></svg>Dental</a>
+        <a href="#surgery"><svg class="i"><use href="#i-plus"/></svg>Surgery</a>
+        <a href="#emergency"><svg class="i"><use href="#i-pulse"/></svg>Emergency</a>
+        <a href="#grooming"><svg class="i"><use href="#i-scissors"/></svg>Grooming</a>
+      </div>
+    </nav>
+
+    <!-- ========== Wellness ========== -->
+    <section class="service-detail" id="wellness">
+      <div class="container service-detail-inner">
+        <img src="images/service-wellness.jpg" alt="Veterinarian gently examining a white cat" />
+        <div class="service-body">
+          <span class="service-tag"><svg class="i"><use href="#i-heart"/></svg>Preventive care</span>
+          <h2>Wellness Exams</h2>
+          <p>Regular wellness exams are the foundation of a long, healthy life. Pets are experts at hiding discomfort, and many common conditions — from dental disease to arthritis, kidney changes, and thyroid problems — develop quietly long before you notice symptoms at home. A thorough head-to-tail exam gives our veterinarians the chance to catch these changes early, when they are easier and more affordable to treat.</p>
+          <p>During your visit, we take the time to get to know your pet and listen to your questions. We check weight and body condition, listen to the heart and lungs, examine the eyes, ears, skin, coat, and teeth, and gently feel the abdomen, joints, and lymph nodes. Depending on your pet's age and lifestyle, we may recommend bloodwork, a urine test, or a parasite screening to get a clearer picture of what's happening inside.</p>
+          <h3>What's included</h3>
+          <ul class="check-list">
+            <li>Complete nose-to-tail physical exam</li>
+            <li>Weight, nutrition, and body condition review</li>
+            <li>Parasite prevention plan for fleas, ticks, and heartworm</li>
+            <li>Age-appropriate lab work and screenings</li>
+            <li>A personalized care plan you can take home</li>
+          </ul>
+          <p>We recommend a wellness exam once a year for most adult dogs and cats, and twice a year for seniors (usually seven years and older) or pets with ongoing health conditions. Puppies and kittens need more frequent visits during their first months as they grow and complete their vaccine series.</p>
+          <p>Wellness visits are also a great time to talk about behavior, training, travel plans, or changes you've noticed at home. No question is too small — the more we know about your pet's daily life, the better we can care for them.</p>
+          <a href="index.html?service=Wellness%20Exam#contact" class="btn btn-accent">Book a Wellness Exam</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Vaccinations ========== -->
+    <section class="service-detail alt" id="vaccinations">
+      <div class="container service-detail-inner">
+        <img src="images/service-vaccinations.jpg" alt="Beagle puppy being gently held for a checkup" />
+        <div class="service-body">
+          <span class="service-tag"><svg class="i"><use href="#i-shield"/></svg>Protection</span>
+          <h2>Vaccinations</h2>
+          <p>Vaccines are one of the simplest and most effective ways to protect your pet from serious, sometimes life-threatening diseases. They work by training your pet's immune system to recognize and fight specific infections before exposure ever happens — keeping your pet, your family, and other animals in the community safer.</p>
+          <p>Not every pet needs every vaccine. Our veterinarians tailor a vaccination plan to your pet's age, health, and lifestyle. Core vaccines are recommended for all dogs and cats, while lifestyle vaccines depend on factors such as whether your dog visits daycare or boarding facilities, hikes in wooded areas, or whether your cat spends time outdoors.</p>
+          <h3>What's included</h3>
+          <ul class="check-list">
+            <li>Core vaccines for dogs, including rabies, distemper, and parvovirus</li>
+            <li>Core vaccines for cats, including rabies and feline distemper</li>
+            <li>Lifestyle vaccines such as Bordetella, leptospirosis, Lyme, and feline leukemia</li>
+            <li>Complete puppy and kitten vaccine series</li>
+            <li>Reminders by text or email so you never miss a booster</li>
+          </ul>
+          <p>Before every vaccine, your pet receives a quick health check to make sure they're well enough to be vaccinated. Most pets experience no side effects at all; a few may feel a little sleepy or sore for a day. We'll explain what to watch for, and we're always just a phone call away if you have concerns.</p>
+          <p>New to the clinic? Bring any previous vaccine records with you, or ask your former veterinarian to send them over. We'll review your pet's history, avoid unnecessary repeat shots, and set up a simple schedule that keeps protection up to date.</p>
+          <a href="index.html?service=Vaccinations#contact" class="btn btn-accent">Book Vaccinations</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Dental ========== -->
+    <section class="service-detail" id="dental">
+      <div class="container service-detail-inner">
+        <img src="images/service-dental.jpg" alt="Veterinarian checking a dachshund's teeth" />
+        <div class="service-body">
+          <span class="service-tag"><svg class="i"><use href="#i-smile"/></svg>Healthy smiles</span>
+          <h2>Dental Care</h2>
+          <p>Dental disease is one of the most common health problems we see — most dogs and cats show signs of it by the age of three. Plaque and tartar build-up can lead to painful gums, loose teeth, and bad breath, and bacteria from an unhealthy mouth can affect the heart, kidneys, and liver over time.</p>
+          <p>Our dental care starts with an oral exam during every wellness visit. When a professional cleaning is needed, it is performed under carefully monitored anesthesia so we can safely clean above and below the gumline, take dental X-rays, and check every tooth for problems hidden beneath the surface. A dedicated team member watches your pet's vital signs from start to finish.</p>
+          <h3>What's included</h3>
+          <ul class="check-list">
+            <li>Oral exam and dental charting</li>
+            <li>Scaling and polishing above and below the gumline</li>
+            <li>Digital dental X-rays</li>
+            <li>Tooth extractions when necessary</li>
+            <li>Home-care coaching, including brushing tips and dental chews</li>
+          </ul>
+          <p>Watch for warning signs such as bad breath, red or bleeding gums, drooling, dropping food, or pawing at the mouth. Pets rarely stop eating because of dental pain, so regular checkups are the best way to keep their smiles healthy and comfortable for years to come.</p>
+          <p>Between visits, a little home care goes a long way. Brushing a few times a week with a pet-safe toothpaste, offering vet-approved dental chews, and scheduling regular checkups can slow tartar build-up and help your pet avoid painful problems later. Our team is always happy to show you easy brushing techniques that work for even the wiggliest pets.</p>
+          <a href="index.html?service=Dental%20Care#contact" class="btn btn-accent">Book Dental Care</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Surgery ========== -->
+    <section class="service-detail alt" id="surgery">
+      <div class="container service-detail-inner">
+        <img src="images/service-surgery.jpg" alt="Tabby cat resting in a recovery cone with a bandaged paw" />
+        <div class="service-body">
+          <span class="service-tag"><svg class="i"><use href="#i-plus"/></svg>Safe procedures</span>
+          <h2>Surgery</h2>
+          <p>When your pet needs surgery, you want to know they're in safe, experienced hands. Our surgical suite is equipped with modern anesthesia and monitoring equipment, and every procedure is performed with a strong focus on safety, pain management, and a gentle recovery.</p>
+          <p>Before any procedure, we perform a pre-surgical exam and recommend bloodwork to make sure anesthesia is as safe as possible for your pet. During surgery, a trained technician monitors heart rate, breathing, oxygen levels, blood pressure, and temperature. Afterward, your pet recovers in a warm, quiet area with close supervision until they're ready to go home.</p>
+          <h3>What's included</h3>
+          <ul class="check-list">
+            <li>Spay and neuter procedures</li>
+            <li>Soft-tissue surgery, such as lump and mass removals</li>
+            <li>Wound repair and laceration care</li>
+            <li>Foreign-body removal</li>
+            <li>Pain management before, during, and after surgery</li>
+            <li>Detailed at-home recovery instructions and follow-up visits</li>
+          </ul>
+          <p>We know surgery can feel stressful for pet parents, too. Our team will walk you through every step, answer your questions, and call you with an update as soon as your pet is awake. Most pets go home the same day with medication and a clear plan for a comfortable recovery.</p>
+          <p>For planned procedures, we'll give you simple instructions to follow beforehand, such as when to stop food and water the night before. At pick-up, we review medications, activity limits, and incision care with you, and we schedule a recheck visit to make sure healing is right on track. If anything seems off once you're home, call us — we're here to help.</p>
+          <a href="index.html?service=Surgery%20Consultation#contact" class="btn btn-accent">Request a Surgery Consult</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Emergency ========== -->
+    <section class="service-detail" id="emergency">
+      <div class="container service-detail-inner">
+        <img src="images/service-emergency.jpg" alt="Veterinary team member in scrubs comforting a corgi" />
+        <div class="service-body">
+          <span class="service-tag tag-urgent"><svg class="i"><use href="#i-pulse"/></svg>24/7 emergency line</span>
+          <h2>Emergency Care</h2>
+          <p>Emergencies never happen at a convenient time. When your pet is hurt or suddenly unwell, our team is here to provide fast, calm, and compassionate care. During clinic hours, urgent cases are seen as quickly as possible, and our 24/7 emergency line connects you with guidance whenever you need it.</p>
+          <p>When you arrive, a team member will assess your pet right away and prioritize care based on how serious the situation is. With in-house X-ray, ultrasound, and laboratory testing, we can diagnose problems quickly and begin treatment without delay. We'll keep you informed and explain your options every step of the way.</p>
+          <h3>Call us right away if you notice</h3>
+          <ul class="check-list urgent">
+            <li>Difficulty breathing or choking</li>
+            <li>Bleeding that won't stop, or deep wounds</li>
+            <li>Suspected poisoning, such as chocolate, medications, or antifreeze</li>
+            <li>Repeated vomiting or diarrhea, especially with lethargy</li>
+            <li>Trouble urinating, collapse, or seizures</li>
+            <li>A swollen, hard belly or unproductive retching</li>
+          </ul>
+          <p>If you think your pet is having an emergency, call before you leave so our team can prepare for your arrival. Stay calm, keep your pet as still and comfortable as possible, and bring any packaging if you suspect they swallowed something harmful.</p>
+          <p>Our team also provides follow-up care after an emergency visit, including rechecks, bandage changes, medication adjustments, and ongoing monitoring. If your pet needs specialized overnight care, we'll arrange a smooth transfer to a trusted 24-hour hospital nearby and share all of their records, so nothing is missed.</p>
+          <a href="tel:5550000000" class="btn btn-urgent">Call (555) 000-0000</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Grooming ========== -->
+    <section class="service-detail alt" id="grooming">
+      <div class="container service-detail-inner">
+        <img src="images/service-grooming.jpg" alt="Small white dog getting a haircut with scissors" />
+        <div class="service-body">
+          <span class="service-tag"><svg class="i"><use href="#i-scissors"/></svg>Look &amp; feel great</span>
+          <h2>Grooming</h2>
+          <p>Regular grooming does far more than keep your pet looking good. A clean, well-maintained coat helps prevent painful mats, skin infections, and overgrown nails, and every session gives our team the chance to spot lumps, skin irritation, parasites, or ear problems early.</p>
+          <p>Our groomers use gentle, fear-free handling techniques and take breaks whenever a pet needs them. Because grooming happens inside a veterinary clinic, nervous pets, seniors, and those with medical conditions can be groomed with a veterinarian close by if anything comes up. We use pet-safe shampoos chosen for your pet's skin and coat type.</p>
+          <h3>What's included</h3>
+          <ul class="check-list">
+            <li>Warm bath with a shampoo suited to your pet's skin</li>
+            <li>Blow-dry and thorough brush-out</li>
+            <li>Breed-specific haircuts and trims</li>
+            <li>Nail trimming and paw-pad care</li>
+            <li>Ear cleaning</li>
+            <li>De-shedding treatments and mat removal</li>
+          </ul>
+          <p>Most dogs benefit from professional grooming every four to eight weeks, depending on their breed and coat. Cats, rabbits, and other small pets are welcome too — just let us know about any special needs when you book, and we'll make sure their visit is calm and comfortable.</p>
+          <p>Between appointments, regular brushing at home helps keep your pet's coat healthy and makes each grooming visit easier. We're happy to recommend the right brush, shampoo, and routine for your pet. Ask about combining grooming with a wellness exam or nail trim to save you an extra trip.</p>
+          <a href="index.html?service=Grooming#contact" class="btn btn-accent">Book Grooming</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Call-to-action band ========== -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <h2>Not sure what your pet needs?</h2>
+          <p>Give us a call — our friendly team is happy to help you choose the right visit.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="tel:5551234567" class="btn btn-ghost">Call (555) 123-4567</a>
+          <a href="index.html#contact" class="btn btn-accent">Request an Appointment</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light"><span class="logo-icon">🐾</span><span class="logo-text">Happy Paws<small>Veterinary Clinic</small></span></a>
+        <p>Nestled in the heart of Anytown, Happy Paws Veterinary Clinic has been a trusted home for compassionate pet care since 2010.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg class="i"><use href="#i-facebook"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="i"><use href="#i-instagram"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <h4>Useful Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="index.html#team">Our Team</a></li>
+            <li><a href="index.html#testimonials">Reviews</a></li>
+            <li><a href="index.html#contact">New Client Form</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Opening Hours</h4>
+          <ul class="hours-list" id="hoursList">
+            <li data-day="1"><span><svg class="i"><use href="#i-clock"/></svg>Monday</span><span>8:00 – 7:00</span></li>
+            <li data-day="2"><span><svg class="i"><use href="#i-clock"/></svg>Tuesday</span><span>8:00 – 7:00</span></li>
+            <li data-day="3"><span><svg class="i"><use href="#i-clock"/></svg>Wednesday</span><span>8:00 – 7:00</span></li>
+            <li data-day="4"><span><svg class="i"><use href="#i-clock"/></svg>Thursday</span><span>8:00 – 7:00</span></li>
+            <li data-day="5"><span><svg class="i"><use href="#i-clock"/></svg>Friday</span><span>8:00 – 6:00</span></li>
+            <li data-day="6"><span><svg class="i"><use href="#i-clock"/></svg>Saturday</span><span>9:00 – 4:00</span></li>
+            <li data-day="0"><span><svg class="i"><use href="#i-clock"/></svg>Sunday</span><span>Closed</span></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Our Services</h4>
+          <ul class="footer-links">
+            <li><a href="#wellness">Wellness Exams</a></li>
+            <li><a href="#vaccinations">Vaccinations</a></li>
+            <li><a href="#dental">Dental Care</a></li>
+            <li><a href="#surgery">Surgery</a></li>
+            <li><a href="#emergency">Emergency Care</a></li>
+            <li><a href="#grooming">Grooming</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><svg class="i"><use href="#i-pin"/></svg><span>123 Placeholder Street,<br />Anytown, ST 12345</span></li>
+            <li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:hello@example.com">hello@example.com</a></li>
+            <li><svg class="i"><use href="#i-phone"/></svg><a href="tel:5551234567">(555) 123-4567</a></li>
+          </ul>
+          <form class="footer-subscribe js-subscribe" novalidate>
+            <input type="email" placeholder="Enter your email" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe"><svg class="i"><use href="#i-send"/></svg></button>
+          </form>
+          <p class="subscribe-msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Happy Paws Veterinary Clinic. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top"><svg class="i"><use href="#i-up"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>

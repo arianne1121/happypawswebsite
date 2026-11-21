@@ -30,6 +30,7 @@
       <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><line x1="20" y1="4" x2="8.12" y2="15.88"/><line x1="14.47" y1="14.48" x2="20" y2="20"/><line x1="8.12" y1="8.12" x2="12" y2="12"/></symbol>
       <symbol id="i-left" viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></symbol>
       <symbol id="i-right" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></symbol>
+      <symbol id="i-down" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol>
       <symbol id="i-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
       <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
     </defs>
@@ -64,7 +65,18 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li class="has-dropdown">
+            <a href="services.html">Services</a>
+            <button class="dd-toggle" aria-expanded="false" aria-label="Show service list"><svg class="i"><use href="#i-down"/></svg></button>
+            <ul class="dropdown">
+              <li><a href="services.html#wellness">Wellness Exams</a></li>
+              <li><a href="services.html#vaccinations">Vaccinations</a></li>
+              <li><a href="services.html#dental">Dental Care</a></li>
+              <li><a href="services.html#surgery">Surgery</a></li>
+              <li><a href="services.html#emergency">Emergency Care</a></li>
+              <li><a href="services.html#grooming">Grooming</a></li>
+            </ul>
+          </li>
           <li><a href="#team">Our Team</a></li>
           <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#contact">New Client Form</a></li>
@@ -92,7 +104,7 @@
           <p class="hero-kicker">Gentle hands,</p>
           <h1>Modern <span>Medicine</span></h1>
           <p class="hero-sub">Full-service care under one roof</p>
-          <a href="#services" class="btn btn-accent">Explore Services</a>
+          <a href="services.html" class="btn btn-accent">Explore Services</a>
         </div>
       </div>
       <div class="hero-slide">
@@ -156,7 +168,7 @@
       </div>
 
       <div class="container promo-grid">
-        <a href="#contact" class="promo promo-health">
+        <a href="services.html#wellness" class="promo promo-health">
           <div class="promo-text">
             <small>Preventative</small>
             <h3>Health Care</h3>
@@ -166,7 +178,7 @@
           <img src="images/promo-health.jpg" alt="Veterinarian checking a dog on an exam table" />
         </a>
 
-        <a href="#contact" class="promo promo-tall">
+        <a href="services.html#surgery" class="promo promo-tall">
           <div class="promo-text">
             <small>For dogs &amp; cats</small>
             <h3>Spay &amp; Neuter</h3>
@@ -195,30 +207,30 @@
         <div class="services-grid">
           <article class="service">
             <svg class="i"><use href="#i-heart"/></svg>
-            <div><h3>Wellness Exams</h3><p>Head-to-tail checkups to catch problems early and keep your pet healthy year-round.</p></div>
+            <div><h3><a href="services.html#wellness">Wellness Exams</a></h3><p>Head-to-tail checkups to catch problems early and keep your pet healthy year-round.</p></div>
           </article>
           <article class="service">
             <svg class="i"><use href="#i-shield"/></svg>
-            <div><h3>Vaccinations</h3><p>Core and lifestyle vaccines tailored to your pet's age, breed, and daily routine.</p></div>
+            <div><h3><a href="services.html#vaccinations">Vaccinations</a></h3><p>Core and lifestyle vaccines tailored to your pet's age, breed, and daily routine.</p></div>
           </article>
           <article class="service">
             <svg class="i"><use href="#i-smile"/></svg>
-            <div><h3>Dental Care</h3><p>Cleanings, polishing, X-rays, and oral exams for fresh breath and healthy teeth.</p></div>
+            <div><h3><a href="services.html#dental">Dental Care</a></h3><p>Cleanings, polishing, X-rays, and oral exams for fresh breath and healthy teeth.</p></div>
           </article>
           <article class="service">
             <svg class="i"><use href="#i-plus"/></svg>
-            <div><h3>Surgery</h3><p>Spay and neuter, soft-tissue procedures, and careful monitoring through recovery.</p></div>
+            <div><h3><a href="services.html#surgery">Surgery</a></h3><p>Spay and neuter, soft-tissue procedures, and careful monitoring through recovery.</p></div>
           </article>
           <article class="service">
             <svg class="i"><use href="#i-pulse"/></svg>
-            <div><h3>Emergency Care</h3><p>Fast, calm help when it matters most. Our emergency line is open 24/7.</p></div>
+            <div><h3><a href="services.html#emergency">Emergency Care</a></h3><p>Fast, calm help when it matters most. Our emergency line is open 24/7.</p></div>
           </article>
           <article class="service">
             <svg class="i"><use href="#i-scissors"/></svg>
-            <div><h3>Grooming</h3><p>Baths, trims, nail care, and a little pampering so they look and feel their best.</p></div>
+            <div><h3><a href="services.html#grooming">Grooming</a></h3><p>Baths, trims, nail care, and a little pampering so they look and feel their best.</p></div>
           </article>
         </div>
-        <a href="#contact" class="btn btn-ghost">Book a Service</a>
+        <a href="services.html" class="btn btn-ghost">View All Services</a>
       </div>
     </section>
 
@@ -373,7 +385,7 @@
       </div>
     </section>
 
-    <!-- ========== Newsletter + partners ========== -->
+    <!-- ========== Newsletter ========== -->
     <section class="section section-tint newsletter-section">
       <div class="container newsletter-grid">
         <div class="newsletter">
@@ -386,13 +398,6 @@
               <button type="submit" class="btn btn-accent btn-sm">Subscribe</button>
             </form>
             <p class="subscribe-msg" role="status" aria-live="polite"></p>
-          </div>
-        </div>
-        <div class="partners">
-          <h2>Our Partners</h2>
-          <p>Trusted food and pharmacy brands we carry.</p>
-          <div class="partner-logos">
-            <span>Partner logo</span><span>Partner logo</span><span>Partner logo</span>
           </div>
         </div>
       </div>
@@ -417,7 +422,7 @@
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="#team">Our Team</a></li>
             <li><a href="#testimonials">Reviews</a></li>
             <li><a href="#contact">New Client Form</a></li>
@@ -462,7 +467,6 @@
     <div class="footer-bottom">
       <div class="container footer-bottom-inner">
         <p>© <span id="year"></span> Happy Paws Veterinary Clinic. All rights reserved.</p>
-        <p>Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></p>
       </div>
     </div>
   </footer>
